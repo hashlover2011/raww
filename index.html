@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vídeo de Apresentação</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  video {
+    width: 100%;
+    height: auto;
+    max-width: 800px; /* ajuste conforme necessidade */
+  }
+</style>
+</head>
+<body>
+
+<!-- Seu vídeo de apresentação -->
+<video id="introVideo" autoplay muted playsinline>
+  <source src="root.mp4" type="video/mp4" />
+  Seu navegador não suporta HTML5 vídeo.
+</video>
+
+<script>
+  const video = document.getElementById('introVideo');
+
+  // Quando o vídeo terminar, redireciona para login.html
+  video.addEventListener('ended', () => {
+    window.location.href = 'index2.html'; // caminho do seu arquivo de login
+  });
+</script>
+
+</body>
+</html>
