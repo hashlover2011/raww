@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Vídeo de Apresentação</title>
+<title>Hello</title>
 <style>
   body, html {
     margin: 0;
@@ -17,13 +17,11 @@
   video {
     width: 100%;
     height: auto;
-    max-width: 800px; /* ajuste conforme necessidade */
+    max-width: 800px; 
   }
 </style>
 </head>
 <body>
-
-<!-- Seu vídeo de apresentação -->
 <video id="introVideo" autoplay muted playsinline>
   <source src="root.mp4" type="video/mp4" />
   Seu navegador não suporta HTML5 vídeo.
@@ -31,10 +29,8 @@
 
 <script>
   const video = document.getElementById('introVideo');
-
-  // Quando o vídeo terminar, redireciona para login.html
   video.addEventListener('ended', () => {
-    window.location.href = 'index2.html'; // caminho do seu arquivo de login
+    window.location.href = 'index2.html'; 
   });
 </script>
 
